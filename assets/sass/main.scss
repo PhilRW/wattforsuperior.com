@@ -1146,6 +1146,28 @@
 		}
 	}
 
+/* Media */
+
+	.features {
+		article {
+			.image.logo {
+				img {
+					aspect-ratio: 21 / 10;
+					background: _palette(bg);
+					border: solid _size(border-width) _palette(border2);
+					@include vendor('object-fit', 'contain');
+					padding: 1.25em;
+				}
+
+				&.cover img {
+					@include vendor('object-fit', 'cover');
+					@include vendor('object-position', 'top');
+					padding: 0;
+				}
+			}
+		}
+	}
+
 /* Header */
 
 	#header {
