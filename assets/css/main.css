@@ -2721,6 +2721,27 @@ input, select, textarea {
 		font-size: 0.9em;
 	}
 
+/* About */
+
+	.image.right.about {
+		max-width: 45%;
+	}
+
+		.image.right.about img {
+			width: 100%;
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.image.right.about {
+				display: block;
+				float: none;
+				margin: 0 0 2.25em 0;
+				max-width: 100%;
+			}
+
+		}
+
 /* Header */
 
 	#header {

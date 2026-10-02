@@ -1181,6 +1181,23 @@
 		}
 	}
 
+/* About */
+
+	.image.right.about {
+		max-width: 45%;
+
+		img {
+			width: 100%;
+		}
+
+		@include breakpoint('<=xsmall') {
+			display: block;
+			float: none;
+			margin: 0 0 _size(element-margin) 0;
+			max-width: 100%;
+		}
+	}
+
 /* Header */
 
 	#header {
